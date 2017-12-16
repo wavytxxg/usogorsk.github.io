@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'us';
+    src: url('../fonts/us.eot');
+    src: url('../fonts/us.eot') format('embedded-opentype'),
+         url('../fonts/us.woff2') format('woff2'),
+         url('../fonts/us.woff') format('woff'),
+         url('../fonts/us.ttf') format('truetype'),
+         url('../fonts/us.svg#us') format('svg');
+}
+@dark-grey: #2b2d30;
+@blue: #23487f;
+.us {
+	font-family: 'us';
+}
+input, button, textarea {
+	outline: none;
+}
+a, a:hover, a:visited, a:active, a:focus {
+	outline: none !important;
+	text-decoration: none;
+}
+
+/* Экран 1 */
+header {
+	height: 100vh;
+	position: relative;
+}
+.header {
+	&_bg {
+		position: absolute;
+		right: 0;
+		background: url(../img/bgheader.jpg) no-repeat bottom;
+		background-size: cover;
+		width: 100%;
+		height: 65vh;
+	}
+	&_text {
+		position: absolute;
+		background-color: black;
+		width: 100%;
+		height: 35vh;
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		h1 {
+			margin-top: 4%;
+			.us;
+			color: white;
+		}
+		button {
+			margin-top: 2%;
+			.us;
+			color: black;
+			background-color: transparent;
+			border: 2px solid white;
+			color: white;
+			padding: 12px 27px;
+			font-size: 25px;
+			transition: 0.2s;
+		}
+		button:hover {
+			border: 2px solid @blue;
+			color: @blue;
+		}
+	}
+}
+
+/* Экран 2 */
+section#history {
+	height: 100vh;
+	background-image: url(../img/35-fon-dlya-sayta.png);
+}
+.history {
+	h4 {
+		.us;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 10%;
+		color: @dark-grey;
+	}
+	p {
+		margin-top: 4%;
+		text-align: center;
+		color: lighten(@dark-grey, 17%);
+		font-family: Segoe UI;
+		font-size: 15px;
+		span {
+			.us;
+			color: @dark-grey;
+		}
+	}
+	&_choose {
+		width: 400px;
+		position: absolute;
+		left: 50%;
+		margin-left: -200px;
+		z-index: 0;
+		text-align: center;
+		span {
+			.us;
+			font-size: 110px;
+			text-align: center;
+			color: @blue;
+		}
+	}
+	ul.history_tabs {
+		margin-top: 5%;
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+		li {
+			z-index: 1;
+			position: relative;
+			height: 45px;
+			width: 70px;
+			line-height: 45px;
+			text-align: center;
+			display: inline-block;
+			font-size: 25px;
+			color: @dark-grey;
+			transition: 0.2s;
+			cursor: pointer;
+			border: 1px solid transparent;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+			margin-right: 1%;
+			background-color: rgba(255, 255, 255, 0.85);
+		}
+		li:hover {
+			color: white;
+			background-color: @blue;
+		}
+	}
+	&_message {
+		margin-top: 50%;
+		height: 90px;
+		background-color: rgba(0, 0, 0, 0.8);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.2);
+		img {
+   			display: inline;
+			width: 65px;
+			height: 65px;
+			-webkit-border-radius: 33px;
+			-moz-border-radius: 33px;
+			-ms-border-radius: 33px;
+			-o-border-radius: 33px;
+			border-radius: 33px;
+			transition: 0.5s;
+		}
+		img:hover {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+		&_img {
+			line-height: 90px;
+		}
+		p {
+			margin-top: 10%;
+			margin-left: 3%;
+			text-align: left;
+			color: white;
+			font-size: 12px;
+			span {
+				font-family: Arial;
+				color: #6ba2f9;
+			}
+		}
+	}
+}
+
+/* Экран 3 */
+section#drugs {
+	height: 100vh;
+.container {
+	height: 100vh;
+}
+}
+.drugs {
+	&_header {
+		h4 {
+			color: lighten(@dark-grey, 17%);
+			font-size: 40px;
+			margin-top: 6%;
+			display: inline-block;
+		}
+	}
+	&_content {
+		position: relative;
+		margin-top: 6%;
+		p {
+			color: @dark-grey;
+			.us;
+			font-size: 22px;
+		}
+		i {
+			font-size: 100px;
+			color: @blue;
+			position: absolute;
+			right: 16px;
+		}
+		img {
+			height: 130px;
+		}
+		&_pleft {
+			text-align: right;
+		}
+		&_row {
+			margin-top: 4%;
+		}
+		&_bgweed {
+			position: relative;
+			background-color: @dark-grey;
+			z-index: 1;
+			height: 15vh;
+			width: 100%;
+			margin-top: 13%;
+			p {
+				color: white;
+				.us;
+				font-size: 22px;
+				text-align: center;
+				line-height: 15vh;
+				z-index: 3;
+			}
+		}
+		&_weed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			background-image: url(../img/we.jpg);
+			opacity: 0;
+			-webkit-transition: all 0.7s;
+			-o-transition: all 0.7s;
+			transition: all 0.7s;
+			
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* Экран 3 */
+section#bidlo {
+	height: 100vh;
+	background-image: url(../img/27-fon-dlya-sayta.png);
+}
+.bidlo {
+	&_header {
+		h4 {
+			margin-top: 7%;
+			.us;
+			text-align: center;
+			font-size: 30px;
+			color: white;
+		}
+	}
+	&_content {
+		margin-top: 12%;
+		color: white;
+		&_talk {
+			height: 25vh;
+			background-color: rgba(255, 255, 255, 0.9);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+			position: relative;
+			-webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+			box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+			h4 {
+				font-family: Segoe UI;
+				padding-top: 40px;
+				color: @dark-grey;
+				font-size: 20px;
+			}
+			p {
+				text-align: center;
+				span {
+					color: @dark-grey;
+					font-family: Segoe UI;
+					font-size: 12px;
+				}
+			}
+			i {
+				margin-top: 1%;
+				color: @dark-grey;
+				font-size: 42px;
+			}
+			a:hover {
+				i, span {
+					color: @blue;
+				}
+			}
+			img {
+	   			position: absolute;
+	   			left: 50%;
+	   			margin-left:-40px;
+	   			margin-top:-40px;
+				width: 80px;
+				height: 80px;
+				-webkit-border-radius: 40px;
+				-moz-border-radius: 40px;
+				-ms-border-radius: 40px;
+				-o-border-radius: 40px;
+				border-radius: 40px;
+			}
+		}
+	}
+
+}
+ul.bidlo_list {
+	margin-top: 2%;
+	list-style: none;
+	text-align: center;
+	word-spacing: 15px;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		height: 14px;
+		width: 14px;
+		background-color: white;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		-ms-border-radius: 7px;
+		-o-border-radius: 7px;
+		border-radius: 7px;
+	}
+	li:hover {
+		background-color: @dark-grey;
+	}
+}
+.yak {
+	display: inline-block;
+}
+
+/* Экран 4 */
+section#life {
+	height: 77vh;
+	background: #3E3C3D;
+	h4 {
+		color: white;
+		.us;
+		font-size: 90px;
+		text-align: center;
+		margin-top: 10%;
+	}
+	p {
+		color: white;
+		.us;
+		margin-top: 5%;
+		font-size: 20px;
+	}
+}
+
+/* footer */
+footer {
+	height: 23vh;
+	background: darken(#3E3C3D, 10%);
+	button {
+		margin-top: 9vh;
+		-webkit-box-shadow: 0px 11px 20px 0px;
+		box-shadow: 0px 11px 20px 0px;
+		background-color: white;
+		width: 170px;
+		text-align: center;
+		height: 40px;
+		color: @dark-grey;
+		font-family: Segoe UI;
+		border: none;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+		border-radius: 20px;
+		transition: 0.2s;
+		i {
+			font-size: 25px;
+			margin-left: 5px;
+		}
+		&:hover {
+			background-color: @dark-grey;
+			color: white;
+		}
+	}
+	p {
+		margin-top: 9vh;
+		text-align: right;
+		font-size: 12px;
+		color: white;
+		font-family: Segoe UI;
+	}
+}
+
+
+@media (max-width: 767px) {
+section#history, section#drugs, section#bidlo, header {
+	min-height: 537px;
+}
+.history_message {
+	max-width: 345px;
+	margin: 0 auto;
+	margin-top: 25%;
+}
+.header_text {
+	h1 {
+		font-size: 25px;
+		margin-top: 16%;
+	}
+	button {
+		font-size: 20px;
+	}
+}
+.history {
+	h4 {
+		font-size: 25px;
+	}
+	p {
+		font-size: 13px;
+		margin-top: 10%;
+	}
+	&_choose {
+		font-size: 90px;
+		left: 50%;
+		width: 280px;
+		margin-left: -140px;
+	}
+	&_choose {
+		span {
+			font-size: 97px;
+		}
+	}
+}
+.drugs {
+	&_header {
+		h4 {
+			margin-top: 10%;
+			font-size: 23px;
+		}
+	}
+	&_content {
+		p {
+			font-size: 20px;
+		}
+		i.fa {
+			display: none;
+		}
+		img {
+			position: absolute;
+			top: 0;
+		}
+		&_row {
+			margin-top: 7%;
+		}
+		&_bgweed {
+			margin-top: 18%;
+		}
+	}
+}
+ul.bidlo_list {
+	margin-top: 15%;
+}
+.bidlo {
+	&_header {
+		h4 {
+			margin-top: 10%;
+		}
+	}
+}
+
+.bidlo_content_talk {
+	min-height: 136px;
+	h4 {
+		font-size: 17px;
+	}
+	p {
+		font-size: 13px;
+	}
+	i {
+		font-size: 30px;
+		margin-top: -5%;
+	}
+}
+section#life {
+	h4 {
+		font-size: 60px;
+	}
+	p {
+	font-size: 17px;	
+	}
+}
+footer {
+	text-align: center;
+	p {
+		margin-top: 0;
+		text-align: center;
+		display: none;
+	}
+}
+.header_bg {
+min-height: 392px;
+}
+.header_text {
+	min-height: 250px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.history_choose span {
+	font-size: 87px;
+}
+.drugs_content {
+	margin-top: 1%;
+}
+.drugs_content_bgweed {
+	margin-top: 8%;
+}
+.bidlo_content i {
+	margin-top: -1%;
+	font-size: 35px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.drugs_content_bgweed {
+		margin-top: 3%;
+}
+.bidlo_content_talk i {
+	margin-top: -3%;
+}
+}
